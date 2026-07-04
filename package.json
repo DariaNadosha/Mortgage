@@ -1,0 +1,26 @@
+{
+  "name": "mortgage",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "ejs": "^6.0.1",
+    "postcss-pxtorem": "^6.1.0",
+    "sass": "^1.101.0",
+    "sharp": "^0.35.3",
+    "vite": "^8.1.3",
+    "vite-plugin-ejs": "^2.0.0",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-image-optimizer": "^2.0.3"
+  },
+  "dependencies": {
+    "just-validate": "^4.3.0",
+    "swiper": "^14.0.1"
+  }
+}
