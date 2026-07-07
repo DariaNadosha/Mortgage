@@ -1,0 +1,41 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.btn {
+    @include button;
+    width: 181px;
+    background-color: transparent;
+    color: $dark;
+    font-size: 16px;
+    border: 1px solid $dark;
+}
+
+.btn-blue {
+    @include button;
+    width: 200px;
+    background-color: $blue;
+    color: $white;
+    font-size: 16px;
+}
+
+.btn-play {
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    background: rgba(#278fb4, 0.4);
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 10px;
+        border-radius: 50%;
+        background: $blue;
+    }
+    svg {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
