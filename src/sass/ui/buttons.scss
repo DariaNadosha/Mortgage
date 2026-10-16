@@ -23,19 +23,34 @@
     height: 60px;
     width: 60px;
     border-radius: 100%;
-    background: rgba(#278fb4, 0.4);
     position: relative;
+    cursor: pointer;
     &::before {
         content: "";
         position: absolute;
         inset: 10px;
         border-radius: 50%;
-        background: $blue;
     }
     svg {
-        position: relative;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    &--blue {
+        background: rgba(#278fb4, 0.4);
+        &::before {
+            background: $blue;
+        }
+    }
+    &--white {
+        background: rgba(#fff, 0.4);
+        &::before {
+            background: $white;
+        }
+        svg path {
+            fill: $blue;
+        }
     }
 }

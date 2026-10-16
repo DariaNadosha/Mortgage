@@ -16,6 +16,7 @@
         padding-top: 40px;
     }
     &__title {
+        max-width: 580px;
         margin-top: 160px;
         font-weight: 700;
         font-size: 48px;
@@ -36,7 +37,8 @@
     }
     &__divider {
         margin-top: 145px;
-        width: 100%;
+        margin-left: 0;
+        width: 703px;
         height: 1px;
         background-color: $grey;
     }

@@ -1,0 +1,14 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.team {
+    padding-top: 105px;
+    &__subtitle {
+        text-align: center;
+        margin-top: 21px;
+    }
+    &__cards {
+        display: flex;
+        padding: 65px 176px 0 176px;
+        gap: 64px;
+    }
+}

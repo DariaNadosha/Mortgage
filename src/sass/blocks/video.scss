@@ -1,0 +1,48 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.video {
+    display: grid;
+    grid-template-areas: "layer";
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: $light-blue;
+    box-sizing: border-box;
+    position: relative;
+    &__bg-person {
+        grid-area: layer;
+        height: 65%;
+        width: auto;
+        object-fit: contain;
+        z-index: -1;
+        // mix-blend-mode: multiply;
+    }
+    &__content {
+        grid-area: layer;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .btn-play {
+        margin-bottom: 24px;
+    }
+    &__title {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+        max-width: 280px;
+        margin-top: -15px;
+    }
+    time {
+        color: $white;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}

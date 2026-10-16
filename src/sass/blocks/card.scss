@@ -1,0 +1,100 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.card {
+    position: relative;
+    width: 517px;
+    height: 567px;
+    border-radius: 4px;
+    &__video {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 220px;
+        z-index: -1;
+        img {
+            transform: translate(35px, 35px) scale(1);
+        }
+        &-play {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+            position: absolute;
+            left: 63%;
+        }
+    }
+    &__info {
+        box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
+        background-color: #fff;
+        padding: 28px 32px 32px 32px;
+    }
+    &__items {
+        margin-top: 16px;
+        display: flex;
+        margin-left: -15px;
+    }
+    &__item {
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #fcfcfc;
+            border: 1px solid #e8e8e8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-title {
+            margin: 8px 0 0;
+            font-weight: 400;
+            font-size: 11px;
+            text-align: center;
+            color: $black;
+        }
+    }
+    &__profession {
+        font-weight: 700;
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: $blue;
+    }
+    &__name {
+        margin-top: 6px;
+        font-weight: 700;
+        font-size: 28px;
+        color: $dark;
+    }
+    &__text {
+        width: 360px;
+        margin-top: 18px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $black;
+        opacity: 0.5;
+    }
+    &__skills {
+        margin-top: 25px;
+        font-weight: 700;
+        font-size: 16px;
+        color: $dark;
+    }
+    &__divider-short {
+        margin-top: 20px;
+        width: 40px;
+        margin-left: 0;
+        border: none;
+        border-top: 1px solid $grey;
+    }
+    &__divider {
+        margin-top: 15px;
+        border: none;
+        border-top: 1px solid $grey;
+    }
+}

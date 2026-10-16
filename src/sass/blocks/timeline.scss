@@ -1,0 +1,59 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.timeline {
+    padding-top: 110px;
+    position: absolute;
+    left: -50px;
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 210px;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            bottom: 10px; /* Заканчивается в центре последнего кружка */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            background-image: linear-gradient(
+                to bottom,
+                $grey 14px,
+                transparent 14px
+            );
+            background-size: 100% 60px;
+            background-repeat: repeat-y;
+            border-radius: 3px;
+            z-index: 1;
+        }
+    }
+
+    &__circle {
+        position: relative;
+        z-index: 2;
+        width: 13px;
+        height: 13px;
+        background-color: #ffffff;
+        border: 1px solid $light-grey;
+        border-radius: 50%;
+        box-sizing: border-box;
+        &--active {
+            height: 20px;
+            width: 20px;
+            background: rgba(#278fb4, 0.4);
+            cursor: pointer;
+            border: none;
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 4px;
+                border-radius: 50%;
+                background: $blue;
+            }
+        }
+    }
+}
