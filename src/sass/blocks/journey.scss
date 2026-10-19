@@ -1,6 +1,7 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .journey {
+    position: relative;
     padding: 105px 100px 0 100px;
     &__wrapper {
         position: relative;
@@ -8,7 +9,7 @@
         display: flex;
         flex-direction: row;
     }
-    &__title {
+    &__title.title-h2 {
         text-align: left;
     }
     &__subtitle {
@@ -17,7 +18,7 @@
         color: $black;
         opacity: 0.5;
         margin-top: 20px;
-        text-align: center;
+        text-align: left;
     }
     &__video {
         margin-left: 65px;
@@ -37,5 +38,97 @@
     }
     &__steps > div {
         margin-bottom: 24px;
+    }
+    &__widget {
+        position: absolute;
+        right: 50px;
+        bottom: 0px;
+        z-index: 2;
+        padding: 24px;
+        width: 409px;
+        height: auto;
+        border-radius: 4px 48px 4px 4px;
+        background: $white;
+        box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
+        &-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        &-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        &-icon {
+            width: 27px;
+            height: 21px;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+        &-text {
+            width: 232px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 200%;
+            color: $black;
+            opacity: 0.7;
+            margin: 0;
+        }
+        &-author {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex-shrink: 0;
+            width: 64px;
+        }
+        &-photo {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 8px;
+        }
+
+        &-name {
+            font-weight: 700;
+            font-size: 12px;
+            color: #000;
+        }
+        &-action {
+            margin-top: 12px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 14px;
+        }
+        &-question {
+            font-weight: 400;
+            font-size: 12px;
+            color: $black;
+        }
+        &-btn.btn-blue {
+            width: 99px;
+            height: 36px;
+            padding: 0;
+            font-weight: 700;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    &__divider {
+        margin: 0;
+        border: none;
+        width: 277px;
+        height: 1px;
+        background-color: $grey;
     }
 }
