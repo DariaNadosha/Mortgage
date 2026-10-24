@@ -1,0 +1,54 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.rating__card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 287px;
+    &-body {
+        width: 244px;
+        padding: 23px 24px 25px 24px;
+    }
+    &__number {
+        font-weight: 700;
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: $blue;
+    }
+
+    &__title {
+        margin-top: 6px;
+        font-weight: 700;
+        font-size: 28px;
+        color: $dark;
+    }
+    &__divider {
+        border: none;
+        width: 196px;
+        height: 1px;
+        margin: 20px auto 0 0;
+        background-color: $grey;
+    }
+    &__text {
+        width: 360px;
+        margin-top: 18px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $black;
+        opacity: 0.5;
+    }
+    &-stars {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        flex-shrink: 0;
+        width: 42px;
+        border-left: 1px solid $grey;
+    }
+}

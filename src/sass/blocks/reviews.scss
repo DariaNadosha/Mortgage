@@ -1,0 +1,107 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.reviews {
+    padding: 88px 100px 0 100px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 34px;
+        margin-top: 30px;
+    }
+    &__title.title-h2 {
+        text-align: left;
+    }
+    &__subtitle {
+        margin-top: 27px;
+    }
+    &__rating > div {
+        margin-top: 24px;
+    }
+    &__slider {
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        width: 100%;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 291px;
+            background-color: $dark-blue;
+            border-radius: 4px;
+            z-index: -1;
+        }
+        &-controls {
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            padding: 30px 30px 32px 32px;
+            gap: 60px;
+        }
+        &-counter {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 100%;
+            color: $white;
+            span {
+                font-size: 12px;
+                opacity: 0.5;
+            }
+        }
+        &-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        &-btn {
+            path {
+                fill: none !important;
+                stroke: #196884;
+            }
+        }
+        &-track {
+            display: flex;
+            gap: 24px;
+            flex-grow: 1;
+            align-items: flex-end;
+            transform: translateY(-100px);
+            margin-top: 0;
+        }
+        &-pagination {
+            position: absolute;
+            bottom: 36px;
+            left: calc(123px + 240px);
+            display: flex;
+            flex-direction: row;
+            gap: 48px;
+            align-items: center;
+        }
+        &-dot {
+            display: block;
+            height: 14px;
+            width: 14px;
+            border-radius: 100%;
+            position: relative;
+            cursor: pointer;
+            background: rgba(#278fb4, 0.4);
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 1px;
+                border-radius: 50%;
+                background: $blue;
+            }
+            &--active {
+                height: 20px;
+                width: 20px;
+                background: rgba(#fff, 0.2);
+                &::before {
+                    inset: 3px;
+                    background: $white;
+                }
+            }
+        }
+    }
+}

@@ -25,6 +25,8 @@
     border-radius: 100%;
     position: relative;
     cursor: pointer;
+    border: none;
+    outline: none;
     &::before {
         content: "";
         position: absolute;

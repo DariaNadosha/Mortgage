@@ -210,5 +210,142 @@
                 </div>
             </div>
         </section>
+
+        <section class="reviews">
+            <h2 class="title-h2 reviews__title">What our customers say</h2>
+            <h3 class="reviews__subtitle">Truly reviews from our clients</h3>
+            <div class="reviews__wrapper">
+                <div class="reviews__rating">
+                    <%-include('./src/templates/rating-card.html') %>
+                    <%-include('./src/templates/rating-card.html') %>
+                </div>
+                <div class="reviews__slider">
+                    <div class="reviews__slider-controls">
+                        <div class="reviews__slider-counter">
+                            01
+                            <span>/10</span>
+                        </div>
+
+                        <div class="reviews__slider-nav">
+                            <a
+                                class="reviews__slider-btn reviews__slider-btn--prev btn-play btn-play--white"
+                            >
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M15 8L1 8"
+                                        stroke="#196884"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M8 15L1 8L8 1"
+                                        stroke="#196884"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                class="reviews__slider-btn reviews__slider-btn--next btn-play btn-play--white"
+                            >
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 8H15"
+                                        stroke="#196884"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M8 1L15 8L8 15"
+                                        stroke="#196884"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="reviews__slider-track">
+                        <div class="reviews__slide">
+                            <%-include('./src/templates/slider-card.html') %>
+                        </div>
+                        <div class="reviews__slide">
+                            <%-include('./src/templates/slider-card.html') %>
+                        </div>
+                    </div>
+                    <div class="reviews__slider-pagination">
+                        <div
+                            class="reviews__slider-dot reviews__slider-dot--active"
+                        ></div>
+                        <div class="reviews__slider-dot"></div>
+                        <div class="reviews__slider-dot"></div>
+                        <div class="reviews__slider-dot"></div>
+                        <div class="reviews__slider-dot"></div>
+                        <div class="reviews__slider-dot"></div>
+                        <div class="reviews__slider-dot"></div>
+                        <div class="reviews__slider-dot"></div>
+                        <div class="reviews__slider-dot"></div>
+                        <div class="reviews__slider-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__wrapper">
+                <div class="knowledge__education">
+                    <div class="knowledge__education-header">
+                        <h2 class="title-h2 education-title">Education</h2>
+                        <a
+                            href="#"
+                            class="knowledge__education-link"
+                        >
+                            All articles
+                        </a>
+                    </div>
+
+                    <div class="knowledge__education-articles">
+                        <article>
+                            <%-include('./src/templates/article-card.html') %>
+                        </article>
+                        <article>
+                            <%-include('./src/templates/article-card.html') %>
+                        </article>
+                        <article>
+                            <%-include('./src/templates/article-card.html') %>
+                        </article>
+                    </div>
+                </div>
+                <div class="knowledge__resources">
+                    <h2 class="title-h2 knowledge__resources-title">
+                        Resources
+                    </h2>
+                    <div class="knowledge__resouce-items">
+                        <div class="knowledge__resource-item">
+                            <%-include('./src/templates/resource-card.html') %>
+                        </div>
+                        <div class="knowledge__resouce-item">
+                            <%-include('./src/templates/resource-card.html') %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

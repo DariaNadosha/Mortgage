@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "just-validate": "^4.3.0",
-    "swiper": "^14.0.1"
+    "swiper": "^14.3.0"
   }
 }

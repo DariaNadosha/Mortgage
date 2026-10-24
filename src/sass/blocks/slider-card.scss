@@ -1,0 +1,70 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.slider-card {
+    padding: 24px 32px 30px 32px;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    width: 479px;
+    cursor: pointer;
+    background-color: $white;
+    flex-shrink: 0;
+    box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.33);
+    &__info {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+    &__photo {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 4px;
+    }
+    &__city {
+        font-weight: 700;
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: $blue;
+    }
+    &__name {
+        display: flex;
+        flex-direction: row;
+        gap: 11px;
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 28px;
+        color: $dark;
+    }
+    &__position {
+        margin-top: 14px;
+        font-weight: 400;
+        font-size: 14px;
+        color: $black;
+        opacity: 0.5;
+    }
+    &__divider {
+        border: none;
+        width: 415px;
+        height: 1px;
+        margin: 24px 0 0 0;
+        background-color: $grey;
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+        margin-top: 27px;
+    }
+    &__text {
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $black;
+        opacity: 0.5;
+    }
+}

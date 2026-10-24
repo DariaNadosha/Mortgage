@@ -1,0 +1,84 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.knowledge {
+    padding: 130px 100px 96px 100px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        width: 100%;
+    }
+    &__education {
+        width: 63%;
+        flex-shrink: 0;
+        &-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-title {
+            h2 {
+                display: inline-block;
+            }
+        }
+        &-link {
+            display: inline-flex;
+            align-items: flex-end;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            color: $blue;
+            border-bottom: 1px solid $blue;
+            padding-bottom: 9px;
+        }
+        &-articles {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            grid-auto-rows: minmax(342px, auto);
+            article {
+                &:first-child {
+                    grid-column: span 2;
+                    .article {
+                        width: 100%;
+                        background: url(/src/img/article-large.jpg) center /
+                            cover no-repeat;
+                        &__title,
+                        &__name,
+                        &__by {
+                            color: $white;
+                        }
+                        &__text {
+                            color: $white;
+                            opacity: 0.7;
+                        }
+                        &__source {
+                            color: $white;
+                            opacity: 0.5;
+                        }
+                        &__divider {
+                            width: 608px;
+                            opacity: 0.2;
+                        }
+                        &:hover {
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__resource {
+        width: 37%;
+        flex-shrink: 0;
+        &-item {
+            &:first-child {
+                .resource__image {
+                    content: url(/src/img/guide.jpg);
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
