@@ -37,7 +37,7 @@
         <section class="promo">
             <div class="promo__wrapper">
                 <div class="promo__media">
-                    <div class="menu promo__menu">
+                    <div class="menu-close promo__menu-close">
                         <div class="hamburger promo__hamburger">
                             <span></span>
                             <span></span>
@@ -321,31 +321,38 @@
                     </div>
 
                     <div class="knowledge__education-articles">
-                        <article>
+                        <a>
                             <%-include('./src/templates/article-card.html') %>
-                        </article>
-                        <article>
+                        </a>
+                        <a>
                             <%-include('./src/templates/article-card.html') %>
-                        </article>
-                        <article>
+                        </a>
+                        <a>
                             <%-include('./src/templates/article-card.html') %>
-                        </article>
+                        </a>
                     </div>
                 </div>
                 <div class="knowledge__resources">
                     <h2 class="title-h2 knowledge__resources-title">
                         Resources
                     </h2>
-                    <div class="knowledge__resouce-items">
-                        <div class="knowledge__resource-item">
+                    <div class="knowledge__resource-items">
+                        <a
+                            href="#"
+                            class="knowledge__resource-item"
+                        >
                             <%-include('./src/templates/resource-card.html') %>
-                        </div>
-                        <div class="knowledge__resouce-item">
+                        </a>
+                        <a
+                            href="#"
+                            class="knowledge__resource-item"
+                        >
                             <%-include('./src/templates/resource-card.html') %>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
+        <%-include('./src/templates/footer.html') %>
     </body>
 </html>

@@ -37,7 +37,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 24px;
             grid-auto-rows: minmax(342px, auto);
-            article {
+            a {
                 &:first-child {
                     grid-column: span 2;
                     .article {
@@ -73,6 +73,7 @@
         width: 37%;
         flex-shrink: 0;
         &-item {
+            text-decoration: none;
             &:first-child {
                 .resource__image {
                     content: url(/src/img/guide.jpg);

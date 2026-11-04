@@ -1,7 +1,7 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .step-card {
-    padding: 28px 72px 44px 40px;
+    padding: 28px 72px 44px 38px;
     border: 1px solid #eaeaea;
     border-radius: 4px;
     width: 380px;
@@ -51,7 +51,6 @@
         background-color: $grey;
     }
     &__text {
-        width: 360px;
         margin-top: 18px;
         font-weight: 400;
         font-size: 14px;

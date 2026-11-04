@@ -1,0 +1,109 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.blog {
+    &__promo {
+        padding: 24px 24px 0 24px;
+        box-shadow: 0 18px 39px 0 rgba(114, 168, 192, 0.13);
+        &-info {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        &-video {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+    &__menu {
+        box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.1);
+    }
+    &__video {
+        padding: 48px 100px 0 100px;
+        &-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            grid-auto-rows: minmax(234px, auto);
+        }
+    }
+    &__resources {
+        padding: 93px 100px 0 100px;
+        .title-h2 {
+            text-align: left;
+        }
+        &-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            grid-auto-rows: minmax(266px, auto);
+        }
+        &-item {
+            &:first-child {
+                .resource__image {
+                    content: url(/src/img/guide.jpg);
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    &__education {
+        padding: 90px 100px 96px 100px;
+        .title-h2 {
+            text-align: left;
+        }
+        &-grid {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            grid-auto-rows: minmax(342px, auto);
+
+            .blog__article {
+                width: 100%;
+                &--left {
+                    grid-column: span 2;
+                }
+                &--right {
+                    grid-column: 2 / span 2;
+                }
+                &--large {
+                    width: 100%;
+                    background: url(/src/img/article-large.jpg) center / cover
+                        no-repeat;
+                    &:hover {
+                        box-shadow: none;
+                    }
+                    .article {
+                        width: 100%;
+                        max-width: 100%;
+                        background-color: transparent;
+                        border: 1px solid rgba(254, 254, 254, 0.2);
+                        &:hover {
+                            background-color: transparent;
+                            box-shadow: none;
+                        }
+                        .article__title,
+                        .article__name,
+                        .article__by {
+                            color: $white;
+                        }
+                        .article__text {
+                            color: $white;
+                            opacity: 0.7;
+                        }
+                        .article__source {
+                            color: $white;
+                            opacity: 0.5;
+                        }
+                        .article__divider {
+                            width: 100%;
+                            max-width: 608px;
+                            opacity: 0.2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <%-include('./src/templates/head.html') %>
+    <body>
+        <section class="blog__promo">
+            <div class="blog__promo-wrapper">
+                <div class="blog__promo-info">
+                    <div class="menu blog__menu">
+                        <div class="hamburger promo__hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <a
+                        href="#"
+                        class="blog__promo-logo"
+                    >
+                        <img
+                            src="/src/img/logo/logo-promo.svg"
+                            alt="logo"
+                        />
+                    </a>
+                </div>
+                <div class="blog__promo-video">
+                    <img
+                        src="/src/img/blog-promo.png"
+                        alt="blog-promo"
+                    />
+                </div>
+            </div>
+        </section>
+        <section class="blog__video">
+            <div class="blog__video-grid">
+                <div class="blog__video-item">
+                    <%- include('./src/templates/video.html') %>
+                </div>
+                <div class="blog__video-item">
+                    <%- include('./src/templates/video.html') %>
+                </div>
+                <div class="blog__video-item">
+                    <%- include('./src/templates/video.html') %>
+                </div>
+                <div class="blog__video-item">
+                    <%- include('./src/templates/video.html') %>
+                </div>
+                <div class="blog__video-item">
+                    <%- include('./src/templates/video.html') %>
+                </div>
+                <div class="blog__video-item">
+                    <%- include('./src/templates/video.html') %>
+                </div>
+            </div>
+        </section>
+        <section class="blog__resources">
+            <h2 class="title-h2 blog__resources-title">Resources</h2>
+            <div class="blog__resources-grid">
+                <div class="blog__resources-item">
+                    <%-include('./src/templates/resource-card.html') %>
+                </div>
+                <div class="blog__resources-item">
+                    <%-include('./src/templates/resource-card.html') %>
+                </div>
+            </div>
+        </section>
+        <section class="blog__education">
+            <h2 class="title-h2 blog__education-title">Education</h2>
+
+            <div class="blog__education-grid">
+                <article
+                    class="blog__article blog__article--large blog__article--left"
+                >
+                    <%-include('./src/templates/article-card.html') %>
+                </article>
+                <article class="blog__article">
+                    <%-include('./src/templates/article-card.html') %>
+                </article>
+
+                <article class="blog__article">
+                    <%-include('./src/templates/article-card.html') %>
+                </article>
+                <article class="blog__article">
+                    <%-include('./src/templates/article-card.html') %>
+                </article>
+                <article class="blog__article">
+                    <%-include('./src/templates/article-card.html') %>
+                </article>
+
+                <article class="blog__article">
+                    <%-include('./src/templates/article-card.html') %>
+                </article>
+                <article
+                    class="blog__article blog__article--large blog__article--right"
+                >
+                    <%-include('./src/templates/article-card.html') %>
+                </article>
+
+                <article class="blog__article">
+                    <%-include('./src/templates/article-card.html') %>
+                </article>
+                <article class="blog__article">
+                    <%-include('./src/templates/article-card.html') %>
+                </article>
+                <article class="blog__article">
+                    <%-include('./src/templates/article-card.html') %>
+                </article>
+            </div>
+        </section>
+        <%-include('./src/templates/footer.html') %>
+    </body>
+</html>

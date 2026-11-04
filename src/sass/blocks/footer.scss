@@ -1,0 +1,120 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.footer {
+    background-color: $dark-blue;
+    &__wrapper {
+        padding: 20px 100px 45px 100px;
+    }
+    &__brand {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        line-height: 0;
+        img {
+            display: block;
+        }
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: max-content max-content max-content minmax(
+                auto,
+                499px
+            );
+        margin-top: 31px;
+        justify-content: space-between;
+    }
+    &__col {
+        display: flex;
+        flex-direction: column;
+        &-title {
+            font-weight: 700;
+            font-size: 15px;
+            color: $white;
+            margin: 0;
+        }
+    }
+    &__divider {
+        width: 100%;
+        opacity: 0.2;
+        border: none;
+        height: 1px;
+        background-color: $white;
+        margin-top: 40px;
+
+        &-top {
+            margin-top: 21px;
+            margin-bottom: 0;
+        }
+    }
+    &__btn {
+        background-color: rgba(255, 255, 255, 0.2) !important;
+        width: 181px !important;
+    }
+    &__contacts a,
+    &__address {
+        margin: 0;
+        margin-top: 25px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $white;
+        opacity: 0.7;
+    }
+
+    &__contacts a {
+        display: inline-block;
+        text-decoration: none;
+    }
+    &__menu {
+        &-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            a {
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: $white;
+                opacity: 0.7;
+            }
+        }
+        &-item {
+            margin: 0;
+            margin-top: 25px;
+        }
+    }
+    &__disclaimer {
+        &-text {
+            margin: 0;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 200%;
+            color: $white;
+            opacity: 0.7;
+            &:nth-child(even) {
+                margin-top: 24px;
+            }
+        }
+    }
+    &__copyright-bar {
+        margin-top: 43px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 140%;
+        color: $white;
+
+        &-note {
+            margin: 0;
+        }
+        &-copyright {
+            display: block;
+            margin: 0;
+            margin-top: 6px;
+        }
+    }
+}
