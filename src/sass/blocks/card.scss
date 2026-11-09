@@ -26,6 +26,11 @@
             position: absolute;
             left: 63%;
         }
+        &-meet {
+            font-weight: 400;
+            font-size: 13px;
+            color: $black;
+        }
     }
     &__info {
         box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
@@ -99,5 +104,52 @@
         margin-top: 15px;
         border: none;
         border-top: 1px solid $grey;
+    }
+    &--horizontal {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 996px;
+        box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
+        overflow: hidden;
+        position: relative;
+        .card__video {
+            width: 45%;
+            flex-shrink: 0;
+            z-index: 1;
+            position: static;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                transform: translate(80px, 0) scale(1);
+                scale: 1;
+            }
+            &-play {
+                position: absolute;
+                bottom: 40px;
+                left: 48%;
+                right: auto;
+            }
+        }
+        .card__info {
+            width: 55%;
+            box-shadow: none;
+            padding-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card__skills,
+        .card__divider,
+        .card__items {
+            display: none;
+        }
+        .card__text {
+            width: 360px;
+            margin-bottom: 50px;
+            margin-top: 15px;
+        }
     }
 }

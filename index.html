@@ -141,8 +141,10 @@
             </h3>
 
             <div class="team__cards">
-                <%- include('./src/templates/card.html') %>
-                <%-include('./src/templates/card.html') %>
+                <%-include('./src/templates/card.html', { modifier: '',
+                imageSrc: '/src/img/justin.png' }) %>
+                <%-include('./src/templates/card.html', { modifier: '',
+                imageSrc: '/src/img/justin.png' }) %>
             </div>
         </section>
         <section class="journey">
