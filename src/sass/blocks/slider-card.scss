@@ -22,35 +22,17 @@
         object-fit: cover;
         margin-bottom: 4px;
     }
-    &__city {
-        font-weight: 700;
-        font-size: 11px;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: $blue;
-    }
     &__name {
         display: flex;
         flex-direction: row;
         gap: 11px;
         margin-top: 10px;
-        font-weight: 700;
-        font-size: 28px;
-        color: $dark;
     }
     &__position {
-        margin-top: 14px;
-        font-weight: 400;
-        font-size: 14px;
-        color: $black;
-        opacity: 0.5;
+        margin-top: 10px;
     }
     &__divider {
-        border: none;
-        width: 415px;
-        height: 1px;
         margin: 24px 0 0 0;
-        background-color: $grey;
     }
     &__content {
         display: flex;
@@ -61,10 +43,5 @@
     }
     &__text {
         margin: 0;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        color: $black;
-        opacity: 0.5;
     }
 }

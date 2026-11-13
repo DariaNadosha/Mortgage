@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <%-include('./src/templates/head.html') %>
+    <body>
+        <section class="article__promo">
+            <div class="article__promo-wrapper">
+                <div class="article__promo-info">
+                    <%-include('./src/templates/menu.html') %>
+                    <a
+                        href="#"
+                        class="article__promo-logo"
+                    >
+                        <img
+                            src="/src/img/logo/logo-promo.svg"
+                            alt="logo"
+                        />
+                    </a>
+                </div>
+                <div class="article__promo-main">
+                    <div class="article__promo-content">
+                        <h1 class="article__promo-title">
+                            9 Things You Must Know About Buying Your First Home
+                        </h1>
+                        <div class="article__promo-name">Scott Johnson</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article__report">
+            <%-include('./src/templates/report.html') %>
+        </section>
+        <section class="article__more">
+            <h2 class="title-h2">More articles</h2>
+            <div class="article__more-articles">
+                <a><%-include('./src/templates/article-card.html') %></a>
+                <a><%-include('./src/templates/article-card.html') %></a>
+                <a><%-include('./src/templates/article-card.html') %></a>
+            </div>
+        </section>
+        <%-include('./src/templates/footer.html') %>
+    </body>
+</html>

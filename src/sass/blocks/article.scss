@@ -1,0 +1,54 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.article {
+    &__promo {
+        padding: 24px 24px 47px 24px;
+        background: url(/src/img/ebook-promo-bg.jpg) center / cover no-repeat;
+        &-wrapper {
+            display: flex;
+            gap: 80px;
+            align-items: flex-start;
+        }
+        &-info {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        &-logo {
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+        &-main {
+            margin-top: 252px;
+        }
+        &-title {
+            width: 434px;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 60px;
+            color: $white;
+        }
+        &-name {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            color: $white;
+            opacity: 0.7;
+        }
+    }
+    &__more {
+        padding: 116px 100px 155px 100px;
+        &-articles {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+    }
+    &__report {
+        width: 650px;
+        margin: 33px auto 0 auto;
+    }
+}

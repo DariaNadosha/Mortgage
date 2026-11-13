@@ -1,0 +1,25 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.item {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-circle {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #fcfcfc;
+        border: 1px solid #e8e8e8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-title {
+        margin: 8px 0 0;
+        font-weight: 400;
+        font-size: 11px;
+        text-align: center;
+        color: $black;
+    }
+}

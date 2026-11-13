@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <%-include('./src/templates/head.html') %>
+    <body>
+        <section class="webinar__promo">
+            <div class="webinar__promo-wrapper">
+                <div class="webinar__promo-content">
+                    <div class="webinar__promo-info">
+                        <%-include('./src/templates/menu.html') %>
+                        <a
+                            href="#"
+                            class="webinar__promo-logo"
+                        >
+                            <img
+                                src="/src/img/logo/logo-promo.svg"
+                                alt="logo"
+                            />
+                        </a>
+                    </div>
+                    <div class="webinar__promo-preview">
+                        <h1 class="webinar__promo-title">Webinar name</h1>
+                        <h3 class="webinar__promo-author">Scott Johnson</h3>
+                        <div class="text webinar__promo-text">
+                            So you’re about to get into the world of
+                            homeownership. It’s okay...everyone feels lost
+                            during this process, but the more preparation you do
+                            upfront, the smoother your journey will be.
+                        </div>
+                        <form
+                            action="#"
+                            method="post"
+                            class="webinar__promo-form"
+                        >
+                            <input
+                                type="text"
+                                class="webinar__promo-input"
+                                placeholder="Your Email"
+                                required
+                            />
+                            <button
+                                type="submit"
+                                class="btn-blue webinar__promo-button"
+                            >
+                                Get the webinar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="webinar__promo-video">
+                    <img
+                        src="/src/img/top-macbook.png"
+                        alt="macbook"
+                        class="promo__webinar-img"
+                    />
+                    <div class="webinar__promo-play">
+                        <a class="btn-play btn-play--blue">
+                            <svg
+                                width="11"
+                                height="16"
+                                viewBox="0 0 11 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M11 8L0 16V0L11 8Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </a>
+                        <time class="webinar__promo-timing">
+                            Play demo (1:34)
+                        </time>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="webinar__features">
+            <div class="webinar__features-wrapper">
+                <h2 class="title-h2">What’s in the webinar</h2>
+                <div class="webinar__features-items">
+                    <%- include('./src/templates/feature.html') %> <%-
+                    include('./src/templates/feature.html') %> <%-
+                    include('./src/templates/feature.html') %>
+                </div>
+            </div>
+        </section>
+        <section class="webinar__speaker">
+            <h2 class="title-h2">About speaker</h2>
+            <div class="webinar__speaker-card">
+                <%-include('./src/templates/card.html', { modifier:
+                'card--horizontal', imageSrc: '/src/img/justin-horizontal.png'
+                }) %>
+            </div>
+        </section>
+        <%- include('./src/templates/cta.html') %> <%-
+        include('./src/templates/footer.html') %>
+    </body>
+</html>

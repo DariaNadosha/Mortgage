@@ -39,11 +39,15 @@ export default defineConfig({
         FullReload(["src/templates/**/*.html"]),
     ],
     build: {
+        outDir: resolve(__dirname, "dist"),
+        emptyOutDir: true,
         rollupOptions: {
             input: {
                 main: resolve(__dirname, "index.html"),
                 blog: resolve(__dirname, "blog.html"),
                 ebook: resolve(__dirname, "ebook.html"),
+                webinar: resolve(__dirname, "webinar.html"),
+                article: resolve(__dirname, "article.html"),
             },
         },
     },

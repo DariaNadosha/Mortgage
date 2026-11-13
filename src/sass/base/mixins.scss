@@ -16,6 +16,11 @@
     color: $dark;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
     text-align: center;
+}
+
+@mixin divider {
+    background-color: $divider-color;
+    border: none;
+    height: 1px;
 }

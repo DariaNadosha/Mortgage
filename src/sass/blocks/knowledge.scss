@@ -6,10 +6,10 @@
         display: flex;
         justify-content: space-between;
         gap: 24px;
-        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
     }
     &__education {
-        width: 63%;
         flex-shrink: 0;
         &-header {
             display: flex;
@@ -60,6 +60,7 @@
                         &__divider {
                             width: 608px;
                             opacity: 0.2;
+                            background-color: #fff;
                         }
                         &:hover {
                             box-shadow: none;

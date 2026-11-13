@@ -1,0 +1,110 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.webinar {
+    &__promo {
+        padding: 24px 24px 0 24px;
+        background: $white
+            linear-gradient(309.27deg, #126893 -4.82%, #278fb4 89.15%);
+        background-repeat: no-repeat;
+        background-size: 546px 100%;
+        background-position: right;
+        &-wrapper {
+            display: flex;
+            gap: 60px;
+            // max-width: 1140px;
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+        }
+        &-info {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        &-preview {
+            margin-left: 76px;
+            margin-top: 103px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 60px;
+            color: $black;
+        }
+        &-author {
+            margin-top: 15px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            color: $black;
+            opacity: 0.7;
+        }
+        &-text {
+            margin-top: 30px;
+            width: 478px;
+        }
+        &-form {
+            margin-top: 30px;
+            display: flex;
+        }
+        &-button {
+            margin-left: -10px;
+            flex-shrink: 0;
+            &.btn-blue {
+                padding: 0 34px;
+                width: auto;
+            }
+            border: none;
+        }
+        &-input {
+            padding: 16px 172px 16px 19px;
+            font-weight: 300;
+            font-size: 16px;
+            color: $black;
+            opacity: 0.5;
+            border: 1px solid #979797;
+            border-radius: 4px;
+        }
+        &-video {
+            display: flex;
+            position: relative;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 3px;
+        }
+        &-play {
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 10;
+        }
+        &-timing {
+            font-weight: 400;
+            font-size: 13px;
+            color: $white;
+        }
+    }
+    &__speaker {
+        padding-top: 100px;
+        &-card {
+            padding-top: 30px;
+            max-width: 996px;
+            margin: 0 auto;
+        }
+    }
+    &__features {
+        margin-top: 105px;
+        &-items {
+            display: flex;
+            width: 905px;
+            margin: 30px auto 0 auto;
+            gap: 38px;
+            flex-wrap: wrap;
+        }
+    }
+}

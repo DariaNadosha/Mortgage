@@ -8,27 +8,23 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        gap: 210px;
         justify-content: center;
         align-items: center;
         width: 20px;
-        &::before {
-            content: "";
-            position: absolute;
-            top: 10px;
-            bottom: 10px; /* Заканчивается в центре последнего кружка */
-            left: 50%;
-            transform: translateX(-50%);
-            width: 2px;
-            background-image: linear-gradient(
-                to bottom,
-                $grey 14px,
-                transparent 14px
-            );
-            background-size: 100% 60px;
-            background-repeat: repeat-y;
-            border-radius: 3px;
-            z-index: 1;
+        hr {
+            width: 1px;
+            height: 2px;
+            border-radius: 15px;
+            margin-top: 9px;
+            margin-bottom: 0;
+            border: none;
+            background-color: $grey;
+            &:first-of-type {
+                margin-top: 2px;
+            }
+            &:nth-of-type(21) {
+                margin-top: 2px;
+            }
         }
     }
 

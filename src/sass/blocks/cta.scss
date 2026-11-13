@@ -1,0 +1,26 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.cta {
+    padding: 147px 100px 96px 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    &__title.title-h2 {
+        text-align: left;
+        margin-top: 36px;
+    }
+    &__text {
+        margin-top: 5px;
+        width: 422px;
+    }
+    &__divider {
+        margin-top: 135px;
+    }
+    &__btn {
+        svg {
+            position: absolute;
+            right: 30px;
+            top: 21px;
+        }
+    }
+}

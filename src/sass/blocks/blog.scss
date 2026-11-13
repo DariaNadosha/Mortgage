@@ -15,9 +15,6 @@
             }
         }
     }
-    &__menu {
-        box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.1);
-    }
     &__video {
         padding: 48px 100px 0 100px;
         &-grid {
@@ -95,11 +92,6 @@
                         .article__source {
                             color: $white;
                             opacity: 0.5;
-                        }
-                        .article__divider {
-                            width: 100%;
-                            max-width: 608px;
-                            opacity: 0.2;
                         }
                     }
                 }

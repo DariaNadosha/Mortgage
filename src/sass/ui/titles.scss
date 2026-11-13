@@ -4,4 +4,27 @@
 .title-h2 {
     @include title;
     font-size: 36px;
+    line-height: 60px;
+}
+
+.title-h3 {
+    @include title;
+    font-size: 28px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.pretitle {
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $blue;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba($color: $black, $alpha: 0.5);
 }

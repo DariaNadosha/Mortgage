@@ -1,0 +1,38 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.divider {
+    @include divider;
+    &__40 {
+        width: 40px;
+    }
+    &__196 {
+        width: 196px;
+    }
+    &__277 {
+        width: 277px;
+    }
+    &__333 {
+        width: 333px;
+    }
+    &__415 {
+        width: 415px;
+    }
+    &__448 {
+        width: 448px;
+    }
+    &__486 {
+        width: 486px;
+    }
+    &__608 {
+        width: 608px;
+    }
+    &__703 {
+        width: 703px;
+    }
+    &__footer {
+        width: 100%;
+        background-color: $white;
+        opacity: 0.2;
+    }
+}

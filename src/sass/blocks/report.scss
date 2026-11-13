@@ -1,0 +1,25 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.report {
+    &__title.title-h2 {
+        text-align: left;
+    }
+    &__intro {
+        width: 599px;
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $black;
+        opacity: 0.8;
+    }
+    &__subtitle {
+        margin-top: 49px;
+    }
+    &__text {
+        margin-top: 23px;
+    }
+    &__photo {
+        margin-top: 29px;
+    }
+}
